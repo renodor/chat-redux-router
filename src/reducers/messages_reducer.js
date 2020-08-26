@@ -10,9 +10,6 @@ export default function(state = null, action) {
       copiedState.push(action.payload);
       return copiedState;
     }
-    case CHANNEL_SELECTED: {
-      return []; // Channel has changed. Clearing view.
-    }
     default:
       return state;
   }
